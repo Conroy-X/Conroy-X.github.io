@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+  <title>MongoDB学习 | token&#39;s blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="这种方式只会在首页列表中显示文章的摘要内容，进入文章详情后不会再显示。">
+<meta name="keywords" content="MongoDB,NoSQL">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MongoDB学习">
+<meta property="og:url" content="http://115.159.143.110/2019/06/20/MongoDB_learn/index.html">
+<meta property="og:site_name" content="token&#39;s blog">
+<meta property="og:description" content="这种方式只会在首页列表中显示文章的摘要内容，进入文章详情后不会再显示。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:updated_time" content="2019-06-19T15:05:22.901Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="MongoDB学习">
+<meta name="twitter:description" content="这种方式只会在首页列表中显示文章的摘要内容，进入文章详情后不会再显示。">
+  
+    <link rel="alternative" href="/atom.xml" title="token&#39;s blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/img/favicon.png">
+  
+  
+      <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+  
+      <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  
+  <!-- 加载特效 -->
+    <script src="/js/pace.js"></script>
+    <link href="/css/pace/pace-theme-flash.css" rel="stylesheet">
+  <script>
+      var yiliaConfig = {
+          rootUrl: '/',
+          fancybox: true,
+          animate: true,
+          isHome: false,
+          isPost: true,
+          isArchive: false,
+          isTag: false,
+          isCategory: false,
+          open_in_new: false
+      }
+  </script>
+</head></html>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            
+            <img lazy-src="/img/head.jpg" class="js-avatar">
+            
+        </a>
+
+        <hgroup>
+          <h1 class="header-author"><a href="/" title="Hi Mate">token</a></h1>
+        </hgroup>
+
+        
+        
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/Home">博客首页</a></li>
+                        
+                            <li><a href="/works">作品展示</a></li>
+                        
+                            <li><a href="/about">留言打卡</a></li>
+                        
+                            <li><a href="/FrontEndGuide">前端导航</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fl mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=21445738@qq.com" title="mail">mail</a>
+                            
+                                <a class="fl github" target="_blank" href="https://github.com/Conroy-X" title="github">github</a>
+                            
+                                <a class="fl QQ" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=21445738&site=qq&menu=yes" title="QQ">QQ</a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <a href="/tags/MongoDB/" style="font-size: 10px;">MongoDB</a> <a href="/tags/NoSQL/" style="font-size: 10px;">NoSQL</a> <a href="/tags/blog/" style="font-size: 10px;">blog</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/nodejs/" style="font-size: 10px;">nodejs</a> <a href="/tags/reg/" style="font-size: 10px;">reg</a> <a href="/tags/ssh-keygen/" style="font-size: 10px;">ssh-keygen</a>
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://luuman.github.io/">name</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">纯海迷、爱运动、爱交友、爱旅行、喜欢接触新鲜事物、迎接新的挑战，更爱游离于错综复杂的编码与逻辑中</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="Me">token</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                
+                    <img lazy-src="/img/head.jpg" class="js-avatar">
+                
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="Me">token</a></h1>
+            </hgroup>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/Home">博客首页</a></li>
+                
+                    <li><a href="/works">作品展示</a></li>
+                
+                    <li><a href="/about">留言打卡</a></li>
+                
+                    <li><a href="/FrontEndGuide">前端导航</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a class="mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=21445738@qq.com" title="mail">mail</a>
+                    
+                        <a class="github" target="_blank" href="https://github.com/Conroy-X" title="github">github</a>
+                    
+                        <a class="QQ" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=21445738&site=qq&menu=yes" title="QQ">QQ</a>
+                    
+                </div>
+            </nav>
+        </header>                
+    </div>
+</nav>
+      <div class="body-wrap"><article id="post-MongoDB_learn" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2019/06/20/MongoDB_learn/" class="article-date">
+      <time datetime="2019-06-19T20:57:13.000Z" itemprop="datePublished">2019-06-19</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      MongoDB学习
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/database/">database</a>
+    </div>
+
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MongoDB/">MongoDB</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/NoSQL/">NoSQL</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>MongoDB学习，此篇文章主要是记录了本人在shell态下对MongoDB的一些学习</p>
+<a id="more"></a>
+
+<h2 id="MongoDB-创建数据库"><a href="#MongoDB-创建数据库" class="headerlink" title="MongoDB 创建数据库"></a>MongoDB 创建数据库</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt; use hreo</span><br><span class="line">switched to db hreo</span><br><span class="line">&gt; db</span><br><span class="line">hreo</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>创建DB只有再插入文档之后才会在 show dbs命令中显示出来</li>
+</ul>
+<h2 id="MongoDB-删除数据库"><a href="#MongoDB-删除数据库" class="headerlink" title="MongoDB 删除数据库"></a>MongoDB 删除数据库</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt; use hreo</span><br><span class="line">switched to db hreo</span><br><span class="line">&gt; db.dropDatabase()</span><br><span class="line">&#123; &quot;dropped&quot; : &quot;hreo&quot;, &quot;ok&quot; : 1 &#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>在进入要删除的数据库之后使用db.dropDatabase()</li>
+</ul>
+<h2 id="MongoDB创建集合"><a href="#MongoDB创建集合" class="headerlink" title="MongoDB创建集合"></a>MongoDB创建集合</h2><p>基本语法:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.createCollection(name, options)</span><br></pre></td></tr></table></figure>
+
+<h3 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&gt; use hreo</span><br><span class="line">switched to db hreo</span><br><span class="line">&gt; db.createCollection(&quot;hreo_collection&quot;)</span><br><span class="line">&#123; &quot;ok&quot; : 1 &#125;</span><br><span class="line">&gt; db.createCollection(&quot;hreo_collection_with_options&quot;,&#123;capped:true, autoIndexId:true, size:6142800, max:10000&#125;)</span><br><span class="line">&#123;</span><br><span class="line">	&quot;note&quot; : &quot;the autoIndexId option is deprecated and will be removed in a future release&quot;,</span><br><span class="line">	&quot;ok&quot; : 1</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="createCollection-option属性介绍"><a href="#createCollection-option属性介绍" class="headerlink" title="createCollection option属性介绍"></a>createCollection option属性介绍</h3><ul>
+<li>capped - Boolean - 创建固定集合，如果超出将覆盖最早的记录，设置为true时必须设置size</li>
+<li>autoIndexId - Boolean - 如为 true，自动在 _id 字段创建索引。默认为 false</li>
+<li>size - 数值 - 为固定集合指定一个最大值（以字节计）。</li>
+<li>max - 数值 - 指定固定集合中包含的文档最大数</li>
+<li>在未来的版本 autoIndexId将会被取消<h3 id="Mongodb创建集合—NOTE"><a href="#Mongodb创建集合—NOTE" class="headerlink" title="Mongodb创建集合—NOTE"></a>Mongodb创建集合—NOTE</h3></li>
+<li>在插入文档时，MongoDB 首先检查固定集合的 size 字段，然后检查 max 字段。</li>
+<li>在 MongoDB 中，你不需要创建集合。当你插入一些文档时，MongoDB 会自动创建集合。</li>
+</ul>
+<h2 id="MongoDB删除集合"><a href="#MongoDB删除集合" class="headerlink" title="MongoDB删除集合"></a>MongoDB删除集合</h2><ul>
+<li><p>语法格式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.collection.drop()</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>实例</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&gt; use hreo</span><br><span class="line">switched to db hreo</span><br><span class="line">&gt; show collections</span><br><span class="line">hreo</span><br><span class="line">hreo_collection</span><br><span class="line">hreo_collection_with_options</span><br><span class="line">&gt; db.hreo.drop()</span><br><span class="line">true</span><br><span class="line">&gt; show collections</span><br><span class="line">hreo_collection</span><br><span class="line">hreo_collection_with_options</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="MongoDB插入文档"><a href="#MongoDB插入文档" class="headerlink" title="MongoDB插入文档"></a>MongoDB插入文档</h2><ul>
+<li><p>实例</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt; db.clo.insert(&#123;title:&quot;Mongo学习&quot;, description:&quot;Mongo is a nosql database&quot;, by:&quot;hreo&quot;, tags:[&quot;MongoDB&quot;, &quot;nosql&quot; ,&quot;database&quot;], like:100&#125;)</span><br><span class="line">WriteResult(&#123; &quot;nInserted&quot; : 1 &#125;)</span><br><span class="line">&gt; db.clo.find()</span><br><span class="line">&#123; &quot;_id&quot; : ObjectId(&quot;5ccfc47f5b016ec14c614895&quot;), &quot;title&quot; : &quot;Mongo学习&quot;, &quot;description&quot; : &quot;Mongo is a nosql database&quot;, &quot;by&quot; : &quot;hreo&quot;, &quot;tags&quot; : [ &quot;MongoDB&quot;, &quot;nosql&quot;, &quot;database&quot; ], &quot;like&quot; : 100 &#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>也可以将数据赋值给一个变量，再插入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">&gt; document=(&#123;title: &apos;MongoDB 教程&apos;, </span><br><span class="line">...     description: &apos;MongoDB 是一个 Nosql 数据库&apos;,</span><br><span class="line">...     by: &apos;菜鸟教程&apos;,</span><br><span class="line">...     url: &apos;http://www.runoob.com&apos;,</span><br><span class="line">...     tags: [&apos;mongodb&apos;, &apos;database&apos;, &apos;NoSQL&apos;],</span><br><span class="line">...     likes: 100</span><br><span class="line">... &#125;);</span><br><span class="line">&#123;</span><br><span class="line">	&quot;title&quot; : &quot;MongoDB 教程&quot;,</span><br><span class="line">	&quot;description&quot; : &quot;MongoDB 是一个 Nosql 数据库&quot;,</span><br><span class="line">	&quot;by&quot; : &quot;菜鸟教程&quot;,</span><br><span class="line">	&quot;url&quot; : &quot;http://www.runoob.com&quot;,</span><br><span class="line">	&quot;tags&quot; : [</span><br><span class="line">		&quot;mongodb&quot;,</span><br><span class="line">		&quot;database&quot;,</span><br><span class="line">		&quot;NoSQL&quot;</span><br><span class="line">	],</span><br><span class="line">	&quot;likes&quot; : 100</span><br><span class="line">&#125;</span><br><span class="line">&gt; db.col.insert(document)</span><br><span class="line">WriteResult(&#123; &quot;nInserted&quot; : 1 &#125;)</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="3-2-版本后还有以下几种语法可用于插入文档"><a href="#3-2-版本后还有以下几种语法可用于插入文档" class="headerlink" title="3.2 版本后还有以下几种语法可用于插入文档:"></a>3.2 版本后还有以下几种语法可用于插入文档:</h3><ul>
+<li>db.collection.insertOne():向指定集合中插入一条文档数据</li>
+<li>db.collection.insertMany():向指定集合中插入多条文档数据</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">#  插入单条数据</span><br><span class="line"></span><br><span class="line">&gt; var document = db.collection.insertOne(&#123;&quot;a&quot;: 3&#125;)</span><br><span class="line">&gt; document</span><br><span class="line">&#123;</span><br><span class="line">        &quot;acknowledged&quot; : true,</span><br><span class="line">        &quot;insertedId&quot; : ObjectId(&quot;571a218011a82a1d94c02333&quot;)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#  插入多条数据</span><br><span class="line">&gt; var res = db.collection.insertMany([&#123;&quot;b&quot;: 3&#125;, &#123;&apos;c&apos;: 4&#125;])</span><br><span class="line">&gt; res</span><br><span class="line">&#123;</span><br><span class="line">        &quot;acknowledged&quot; : true,</span><br><span class="line">        &quot;insertedIds&quot; : [</span><br><span class="line">                ObjectId(&quot;571a22a911a82a1d94c02337&quot;),</span><br><span class="line">                ObjectId(&quot;571a22a911a82a1d94c02338&quot;)</span><br><span class="line">        ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="MongoDB更新文档"><a href="#MongoDB更新文档" class="headerlink" title="MongoDB更新文档"></a>MongoDB更新文档</h2><h3 id="update-方法"><a href="#update-方法" class="headerlink" title="update 方法"></a>update 方法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">db.collection.update(</span><br><span class="line">   &lt;query&gt;,</span><br><span class="line">   &lt;update&gt;,</span><br><span class="line">   &#123;</span><br><span class="line">     upsert: &lt;boolean&gt;,</span><br><span class="line">     multi: &lt;boolean&gt;,</span><br><span class="line">     writeConcern: &lt;document&gt;</span><br><span class="line">   &#125;</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+
+<h3 id="参数说明"><a href="#参数说明" class="headerlink" title="参数说明"></a>参数说明</h3><ul>
+<li><p>query : update的查询条件，类似sql update查询内where后面的。</p>
+</li>
+<li><p>update : update的对象和一些更新的操作符（如$,$inc…）等，也可以理解为sql update查询内set后面的</p>
+</li>
+<li><p>upsert : 可选，这个参数的意思是，如果不存在update的记录，是否插入objNew,true为插入，默认是false，不插入。</p>
+</li>
+<li><p>multi : 可选，mongodb 默认是false,只更新找到的第一条记录，如果这个参数为true,就把按条件查出来多条记录全部更新。</p>
+</li>
+<li><p>writeConcern :可选，抛出异常的级别。</p>
+</li>
+<li><p>实例</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&gt; db.col.update(&#123;title:&quot;MongoDB 教程&quot;&#125;, &#123;$set:&#123;title:&quot;MongoDB&quot;&#125;&#125;)</span><br><span class="line">WriteResult(&#123; &quot;nMatched&quot; : 1, &quot;nUpserted&quot; : 0, &quot;nModified&quot; : 1 &#125;)</span><br><span class="line">&gt; db.col.find()</span><br><span class="line">&#123; &quot;_id&quot; : ObjectId(&quot;5ccfc75b698e1e551f476ee5&quot;), &quot;title&quot; : &quot;Mongo学习&quot;, &quot;description&quot; : &quot;Mongo is a nosql database&quot;, &quot;by&quot; : &quot;hreo&quot;, &quot;tags&quot; : [ &quot;MongoDB&quot;, &quot;nosql&quot;, &quot;database&quot; ], &quot;like&quot; : 100 &#125;</span><br><span class="line">&#123; &quot;_id&quot; : ObjectId(&quot;5ccfc7a6698e1e551f476ee6&quot;), &quot;title&quot; : &quot;MongoDB&quot; &#125;</span><br><span class="line">&#123; &quot;_id&quot; : ObjectId(&quot;5ccfca7f698e1e551f476ee7&quot;), &quot;title&quot; : &quot;MongoDB&quot;, &quot;description&quot; : &quot;MongoDB 是一个 Nosql 数据库&quot;, &quot;by&quot; : &quot;菜鸟教程&quot;, &quot;url&quot; : &quot;http://www.runoob.com&quot;, &quot;tags&quot; : [ &quot;mongodb&quot;, &quot;database&quot;, &quot;NoSQL&quot; ], &quot;likes&quot; : 100 &#125;</span><br><span class="line"></span><br><span class="line">db.inventory.find( &#123; status: &quot;A&quot; &#125;, &#123; item: 1, status: 1 &#125; )</span><br><span class="line">相当于sql语句 ELECT _id, item, status from inventory WHERE status = &quot;A&quot;</span><br><span class="line">其中_id是默认输出的</span><br><span class="line">db.inventory.find( &#123; status: &quot;A&quot; &#125;, &#123; item: 1, status: 1, _id=0&#125; )</span><br><span class="line">ELECT item, status from inventory WHERE status = &quot;A&quot;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>note</p>
+</li>
+</ul>
+<p>如果不加{$set:{}}，而写成db.col.update({title:”MongoDB 教程”}, {title:”MongoDB”}) 则会更改整个文档，而不是修改其中一个属性（field）</p>
+<h3 id="save方法"><a href="#save方法" class="headerlink" title="save方法"></a>save方法</h3><p>在文档中指定_id可以更新这个文档，不指定_id则可以保存插入此文档</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">&gt;db.col.save(&#123;</span><br><span class="line">    &quot;_id&quot; : ObjectId(&quot;56064f89ade2f21f36b03136&quot;),</span><br><span class="line">    &quot;title&quot; : &quot;MongoDB&quot;,</span><br><span class="line">    &quot;description&quot; : &quot;MongoDB 是一个 Nosql 数据库&quot;,</span><br><span class="line">    &quot;by&quot; : &quot;Runoob&quot;,</span><br><span class="line">    &quot;url&quot; : &quot;http://www.runoob.com&quot;,</span><br><span class="line">    &quot;tags&quot; : [</span><br><span class="line">            &quot;mongodb&quot;,</span><br><span class="line">            &quot;NoSQL&quot;</span><br><span class="line">    ],</span><br><span class="line">    &quot;likes&quot; : 110</span><br><span class="line">&#125;)</span><br><span class="line">&gt;db.col.find().pretty()</span><br><span class="line"># pretty()方法是按照JSON格式显示文档</span><br><span class="line">&#123;</span><br><span class="line">        &quot;_id&quot; : ObjectId(&quot;56064f89ade2f21f36b03136&quot;),</span><br><span class="line">        &quot;title&quot; : &quot;MongoDB&quot;,</span><br><span class="line">        &quot;description&quot; : &quot;MongoDB 是一个 Nosql 数据库&quot;,</span><br><span class="line">        &quot;by&quot; : &quot;Runoob&quot;,</span><br><span class="line">        &quot;url&quot; : &quot;http://www.runoob.com&quot;,</span><br><span class="line">        &quot;tags&quot; : [</span><br><span class="line">                &quot;mongodb&quot;,</span><br><span class="line">                &quot;NoSQL&quot;</span><br><span class="line">        ],</span><br><span class="line">        &quot;likes&quot; : 110</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="MongoDB-删除文档"><a href="#MongoDB-删除文档" class="headerlink" title="MongoDB 删除文档"></a>MongoDB 删除文档</h2><h3 id="remove-语法"><a href="#remove-语法" class="headerlink" title="remove 语法"></a>remove 语法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">db.collection.remove(</span><br><span class="line">   &lt;query&gt;,</span><br><span class="line">   &#123;</span><br><span class="line">     justOne: &lt;boolean&gt;,</span><br><span class="line">     writeConcern: &lt;document&gt;</span><br><span class="line">   &#125;</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+
+<h3 id="remove方法-参数说明"><a href="#remove方法-参数说明" class="headerlink" title="remove方法 参数说明"></a>remove方法 参数说明</h3><ul>
+<li>query :（可选）删除的文档的条件。</li>
+<li>justOne : （可选）如果设为 true/n，则只删除1/n个文档，如果不设置该参数，或使用默认值 false，则删除所有匹配条件的文档。</li>
+<li>writeConcern :（可选）抛出异常的级别。</li>
+</ul>
+<h3 id="实例-1"><a href="#实例-1" class="headerlink" title="实例"></a>实例</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+      
+      
+        <div class="page-reward">
+          <p><a href="javascript:void(0)" onclick="dashangToggle()" class="dashang">赏</a></p>
+          <div class="hide_box"></div>
+          <div class="shang_box">
+            <a class="shang_close" href="javascript:void(0)" onclick="dashangToggle()">×</a>
+            <div class="shang_tit">
+              <p>纯属好玩</p>
+            </div>
+            <div class="shang_payimg">
+              <img src="/img/alipayimg.jpg" alt="扫码支持" title="扫一扫" />
+            </div>
+              <div class="pay_explain">扫码打赏，你说多少就多少</div>
+            <div class="shang_payselect">
+              
+                <div class="pay_item checked" data-id="alipay">
+                  <span class="radiobox"></span>
+                  <span class="pay_logo"><img src="/img/alipay.png" alt="支付宝" /></span>
+                </div>
+              
+              
+                <div class="pay_item" data-id="wechat">
+                  <span class="radiobox"></span>
+                  <span class="pay_logo"><img src="/img/weixin.png" alt="微信" /></span>
+                </div>
+              
+            </div>
+            <div class="shang_info">
+              <p>打开<span id="shang_pay_txt">支付宝</span>扫一扫，即可进行扫码打赏哦</p>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
+        <script type="text/javascript">
+          $(".pay_item").click(function(){
+            $(this).addClass('checked').siblings('.pay_item').removeClass('checked');
+            var dataid=$(this).attr('data-id');
+            $(".shang_payimg img").attr("src","/img/"+dataid+"img.jpg");
+            $("#shang_pay_txt").text(dataid=="alipay"?"支付宝":"微信");
+          });
+          function dashangToggle(){
+            
+            $(".hide_box").fadeToggle();
+            $(".shang_box").fadeToggle();
+          }
+        </script>
+      
+    </div>
+    
+  </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2019/06/20/MongoDB_learn/">MongoDB学习</a></p>
+        <p><span>文章作者:</span><a href="/" title="访问 token 的个人博客">token</a></p>
+        <p><span>发布时间:</span>2019年06月19日 - 20时57分</p>
+        <p><span>最后更新:</span>2019年06月19日 - 23时05分</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2019/06/20/MongoDB_learn/" title="MongoDB学习">http://115.159.143.110/2019/06/20/MongoDB_learn/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://115.159.143.110/2019/06/20/MongoDB_learn/　　作者: token" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script src="/js/clipboard.min.js"></script>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+<nav id="article-nav">
+  
+  
+    <a href="/2019/05/07/hexo_Blog_Build/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">hexo_Blog_Build</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#MongoDB-创建数据库"><span class="toc-number">1.</span> <span class="toc-text">MongoDB 创建数据库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#MongoDB-删除数据库"><span class="toc-number">2.</span> <span class="toc-text">MongoDB 删除数据库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#MongoDB创建集合"><span class="toc-number">3.</span> <span class="toc-text">MongoDB创建集合</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#实例"><span class="toc-number">3.1.</span> <span class="toc-text">实例</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#createCollection-option属性介绍"><span class="toc-number">3.2.</span> <span class="toc-text">createCollection option属性介绍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Mongodb创建集合—NOTE"><span class="toc-number">3.3.</span> <span class="toc-text">Mongodb创建集合—NOTE</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#MongoDB删除集合"><span class="toc-number">4.</span> <span class="toc-text">MongoDB删除集合</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#MongoDB插入文档"><span class="toc-number">5.</span> <span class="toc-text">MongoDB插入文档</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-版本后还有以下几种语法可用于插入文档"><span class="toc-number">5.1.</span> <span class="toc-text">3.2 版本后还有以下几种语法可用于插入文档:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#MongoDB更新文档"><span class="toc-number">6.</span> <span class="toc-text">MongoDB更新文档</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#update-方法"><span class="toc-number">6.1.</span> <span class="toc-text">update 方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#参数说明"><span class="toc-number">6.2.</span> <span class="toc-text">参数说明</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#save方法"><span class="toc-number">6.3.</span> <span class="toc-text">save方法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#MongoDB-删除文档"><span class="toc-number">7.</span> <span class="toc-text">MongoDB 删除文档</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#remove-语法"><span class="toc-number">7.1.</span> <span class="toc-text">remove 语法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#remove方法-参数说明"><span class="toc-number">7.2.</span> <span class="toc-text">remove方法 参数说明</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#实例-1"><span class="toc-number">7.3.</span> <span class="toc-text">实例</span></a></li></ol></li></ol>
+</div>
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+        }
+    })
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+    }
+</script>
+
+
+
+
+
+<div class="bdsharebuttonbox">
+	<a href="#" class="fx fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+	<a href="#" class="fx fa-weixin bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+	<a href="#" class="fx fa-qq bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+	<a href="#" class="fx fa-facebook-official bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+	<a href="#" class="fx fa-twitter bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+	<a href="#" class="fx fa-linkedin bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+	<a href="#" class="fx fa-files-o bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+</div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+
+
+
+    
+        <div id="gitments"></div>
+<script src="/js/gitment.browser.js"></script>
+<script>
+    var gitment = new Gitment({
+      id: window.location.pathname,
+      owner: 'luuman',
+      repo: 'luuman.github.io',
+      oauth: {
+        client_id: '',
+        client_secret: '',
+      },
+    })
+    gitment.render('gitments')
+</script>
+    
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        
+            <a href="/2019/05/07/hexo_Blog_Build/" title="下一篇: hexo_Blog_Build">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/06/20/MongoDB_learn/">MongoDB学习</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/05/07/hexo_Blog_Build/">hexo_Blog_Build</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/05/07/regular_expression/">正则表达式学习</a></li></ul>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+    <script>
+        $(".post-list").addClass("toc-article");
+        $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+            }
+        })
+    </script>
+
+
+
+    <script>
+        
+    </script>
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                &copy; 2019-06-19 <a href="https://github.com/Conroy-X">token</ a>
+            </div>
+            <div class="footer-right">
+               <!-- <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/luuman/hexo-theme-spfk" target="_blank">spfk</a> by luuman -->
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" >到访数: 
+                            <span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>, </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit">本页阅读量: 
+                            <span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+
+    </div>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var backgroundnum = 24;
+            var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+            $("#mobile-nav").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+            $(".left-col").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+        })
+    </script>
+
+
+
+
+
+<div class="scroll" id="scroll">
+    <a href="#"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    $(document).ready(function() {
+        if ($("#comments").length < 1) {
+            $("#scroll > a:nth-child(2)").hide();
+        };
+    })
+</script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+  <script language="javascript">
+    $(function() {
+        $("a[title]").each(function() {
+            var a = $(this);
+            var title = a.attr('title');
+            if (title == undefined || title == "") return;
+            a.data('title', title).removeAttr('title').hover(
+
+            function() {
+                var offset = a.offset();
+                $("<div id=\"anchortitlecontainer\"></div>").appendTo($("body")).html(title).css({
+                    top: offset.top - a.outerHeight() - 15,
+                    left: offset.left + a.outerWidth()/2 + 1
+                }).fadeIn(function() {
+                    var pop = $(this);
+                    setTimeout(function() {
+                        pop.remove();
+                    }, pop.text().length * 800);
+                });
+            }, function() {
+                $("#anchortitlecontainer").remove();
+            });
+        });
+    });
+</script>
+
+
+  </div>
+</body>
+</html>
