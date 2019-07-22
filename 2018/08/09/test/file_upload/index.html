@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+  <title>file_upload | token&#39;s blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="在upload-lab的学习中的一些笔记">
+<meta name="keywords" content="file_upload,upload-lab">
+<meta property="og:type" content="article">
+<meta property="og:title" content="file_upload">
+<meta property="og:url" content="http://115.159.143.110/2018/08/09/test/file_upload/index.html">
+<meta property="og:site_name" content="token&#39;s blog">
+<meta property="og:description" content="在upload-lab的学习中的一些笔记">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:updated_time" content="2019-07-22T02:22:03.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="file_upload">
+<meta name="twitter:description" content="在upload-lab的学习中的一些笔记">
+  
+    <link rel="alternative" href="/atom.xml" title="token&#39;s blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/img/favicon.png">
+  
+  
+      <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+  
+      <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  
+  <!-- 加载特效 -->
+    <script src="/js/pace.js"></script>
+    <link href="/css/pace/pace-theme-flash.css" rel="stylesheet">
+  <script>
+      var yiliaConfig = {
+          rootUrl: '/',
+          fancybox: true,
+          animate: true,
+          isHome: false,
+          isPost: true,
+          isArchive: false,
+          isTag: false,
+          isCategory: false,
+          open_in_new: false
+      }
+  </script>
+</head></html>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            
+            <img lazy-src="/img/head.jpg" class="js-avatar">
+            
+        </a>
+
+        <hgroup>
+          <h1 class="header-author"><a href="/" title="Hi Mate">token</a></h1>
+        </hgroup>
+
+        
+        
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/Home">博客首页</a></li>
+                        
+                            <li><a href="/works">作品展示</a></li>
+                        
+                            <li><a href="/about">留言打卡</a></li>
+                        
+                            <li><a href="/FrontEndGuide">前端导航</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fl mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=21445738@qq.com" title="mail">mail</a>
+                            
+                                <a class="fl github" target="_blank" href="https://github.com/Conroy-X" title="github">github</a>
+                            
+                                <a class="fl QQ" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=21445738&site=qq&menu=yes" title="QQ">QQ</a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <a href="/tags/Axure/" style="font-size: 10px;">Axure</a> <a href="/tags/Chai/" style="font-size: 10px;">Chai</a> <a href="/tags/Karma/" style="font-size: 10px;">Karma</a> <a href="/tags/Mocha/" style="font-size: 10px;">Mocha</a> <a href="/tags/MongoDB/" style="font-size: 10px;">MongoDB</a> <a href="/tags/NoSQL/" style="font-size: 10px;">NoSQL</a> <a href="/tags/Unit-Testing/" style="font-size: 10px;">Unit Testing</a> <a href="/tags/aircrack/" style="font-size: 10px;">aircrack</a> <a href="/tags/attack/" style="font-size: 10px;">attack</a> <a href="/tags/bbr/" style="font-size: 10px;">bbr</a> <a href="/tags/blind-injection/" style="font-size: 10px;">blind_injection</a> <a href="/tags/blog/" style="font-size: 10px;">blog</a> <a href="/tags/config/" style="font-size: 10px;">config</a> <a href="/tags/exec/" style="font-size: 10px;">exec</a> <a href="/tags/file-upload/" style="font-size: 10px;">file_upload</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/injection/" style="font-size: 20px;">injection</a> <a href="/tags/install/" style="font-size: 10px;">install</a> <a href="/tags/instruction/" style="font-size: 10px;">instruction</a> <a href="/tags/key/" style="font-size: 10px;">key</a> <a href="/tags/license/" style="font-size: 10px;">license</a> <a href="/tags/modele/" style="font-size: 10px;">modele</a> <a href="/tags/nodejs/" style="font-size: 10px;">nodejs</a> <a href="/tags/password/" style="font-size: 10px;">password</a> <a href="/tags/phpmyadmin/" style="font-size: 10px;">phpmyadmin</a> <a href="/tags/proxy/" style="font-size: 10px;">proxy</a> <a href="/tags/reg/" style="font-size: 10px;">reg</a> <a href="/tags/reset/" style="font-size: 10px;">reset</a> <a href="/tags/shell/" style="font-size: 10px;">shell</a> <a href="/tags/sql/" style="font-size: 20px;">sql</a> <a href="/tags/sqli-labs/" style="font-size: 10px;">sqli-labs</a> <a href="/tags/sqli-labs/" style="font-size: 10px;">sqli_labs</a> <a href="/tags/ss/" style="font-size: 10px;">ss</a> <a href="/tags/ssh-keygen/" style="font-size: 10px;">ssh-keygen</a> <a href="/tags/ssr/" style="font-size: 10px;">ssr</a> <a href="/tags/unauthorized-access/" style="font-size: 10px;">unauthorized_access</a> <a href="/tags/uninstall/" style="font-size: 10px;">uninstall</a> <a href="/tags/upload-lab/" style="font-size: 10px;">upload-lab</a> <a href="/tags/wifi/" style="font-size: 10px;">wifi</a> <a href="/tags/xssr/" style="font-size: 10px;">xssr</a> <a href="/tags/大众读物/" style="font-size: 10px;">大众读物</a> <a href="/tags/读书笔记/" style="font-size: 10px;">读书笔记</a>
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://luuman.github.io/">name</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">纯海迷、爱运动、爱交友、爱旅行、喜欢接触新鲜事物、迎接新的挑战，更爱游离于错综复杂的编码与逻辑中</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="Me">token</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                
+                    <img lazy-src="/img/head.jpg" class="js-avatar">
+                
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="Me">token</a></h1>
+            </hgroup>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/Home">博客首页</a></li>
+                
+                    <li><a href="/works">作品展示</a></li>
+                
+                    <li><a href="/about">留言打卡</a></li>
+                
+                    <li><a href="/FrontEndGuide">前端导航</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a class="mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=21445738@qq.com" title="mail">mail</a>
+                    
+                        <a class="github" target="_blank" href="https://github.com/Conroy-X" title="github">github</a>
+                    
+                        <a class="QQ" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=21445738&site=qq&menu=yes" title="QQ">QQ</a>
+                    
+                </div>
+            </nav>
+        </header>                
+    </div>
+</nav>
+      <div class="body-wrap"><article id="post-test/file_upload" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2018/08/09/test/file_upload/" class="article-date">
+      <time datetime="2018-08-09T00:10:18.000Z" itemprop="datePublished">2018-08-09</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      file_upload
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/test/">test</a>
+    </div>
+
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/file-upload/">file_upload</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/upload-lab/">upload-lab</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h1 id="file-upload"><a href="#file-upload" class="headerlink" title="file_upload"></a>file_upload</h1><hr>
+<h2 id="JS"><a href="#JS" class="headerlink" title="JS"></a>JS</h2><ul>
+<li>上传白名单类型文件，抓包修改为php格式</li>
+</ul>
+<hr>
+<h2 id="MIME类型检测"><a href="#MIME类型检测" class="headerlink" title="MIME类型检测"></a>MIME类型检测</h2><ul>
+<li>根据网站白名单的类型，修改contain type即可</li>
+</ul>
+<hr>
+<h2 id="文件后缀名检测QQQQQQQQQQQQQQQ"><a href="#文件后缀名检测QQQQQQQQQQQQQQQ" class="headerlink" title="文件后缀名检测QQQQQQQQQQQQQQQ"></a>文件后缀名检测QQQQQQQQQQQQQQQ</h2><ul>
+<li>特殊文件名的解析怎么玩,直接回显(upload-lab3)</li>
+</ul>
+<h3 id="黑名单"><a href="#黑名单" class="headerlink" title="黑名单"></a>黑名单</h3><ul>
+<li>特殊文件名，Php3，phtml，asa，cer等</li>
+<li>大小写：phP，aSp等</li>
+<li>删除后缀名：pphphp<h3 id="白名单"><a href="#白名单" class="headerlink" title="白名单"></a>白名单</h3></li>
+</ul>
+<hr>
+<h2 id="htaccess可上传"><a href="#htaccess可上传" class="headerlink" title=".htaccess可上传"></a>.htaccess可上传</h2><p>上传一个.htaccess内容如下的文件:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SetHandler application/x-httpd-php</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>所有文件都会解析为php，再上传图片马，解析</li>
+</ul>
+<hr>
+<h2 id="phP大小写未过滤"><a href="#phP大小写未过滤" class="headerlink" title="phP大小写未过滤"></a>phP大小写未过滤</h2><ul>
+<li>上传test.phP文件</li>
+</ul>
+<hr>
+<h2 id="未对php-过滤"><a href="#未对php-过滤" class="headerlink" title="未对php 过滤"></a>未对php 过滤</h2><ul>
+<li>xxx.php空格能够正常上传，解析</li>
+</ul>
+<hr>
+<h2 id="windows特性"><a href="#windows特性" class="headerlink" title="windows特性"></a>windows特性</h2><ul>
+<li>windows下特性后缀名加空格，点名，::$DATA。</li>
+<li>xxx.php. 上传到服务器之后会变成xxx.php</li>
+<li>xxx.php::$DATA会变成xxx.php</li>
+</ul>
+<hr>
+<h2 id="代码审计"><a href="#代码审计" class="headerlink" title="代码审计"></a>代码审计</h2><ul>
+<li>路径拼接的是处理后的文件，构造”info.php. .”，经过处理后变成info.php</li>
+</ul>
+<hr>
+<h2 id="双写绕过"><a href="#双写绕过" class="headerlink" title="双写绕过"></a>双写绕过</h2><ul>
+<li><p>info.pphphp</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$file_name = str_ireplace($deny_ext,&quot;&quot;, $file_name);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>把字符串file_name中的dey_ext变空</p>
+</li>
+</ul>
+<hr>
+<h2 id="00截断-原理pass-11"><a href="#00截断-原理pass-11" class="headerlink" title="00截断  原理pass-11"></a>00截断  原理pass-11</h2><ul>
+<li>%00截断QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">$is_upload = false;</span><br><span class="line">$msg = null;</span><br><span class="line">if(isset($_POST[&apos;submit&apos;]))&#123;</span><br><span class="line">    $ext_arr = array(&apos;jpg&apos;,&apos;png&apos;,&apos;gif&apos;);</span><br><span class="line">    $file_ext = substr($_FILES[&apos;upload_file&apos;][&apos;name&apos;],strrpos($_FILES[&apos;upload_file&apos;][&apos;name&apos;],&quot;.&quot;)+1);       //返回类型名</span><br><span class="line">    if(in_array($file_ext,$ext_arr))&#123;</span><br><span class="line">        $temp_file = $_FILES[&apos;upload_file&apos;][&apos;tmp_name&apos;];</span><br><span class="line">        $img_path = $_GET[&apos;save_path&apos;].&quot;/&quot;.rand(10, 99).date(&quot;YmdHis&quot;).&quot;.&quot;.$file_ext;</span><br><span class="line"></span><br><span class="line">        if(move_uploaded_file($temp_file,$img_path))&#123;</span><br><span class="line">            $is_upload = true;</span><br><span class="line">        &#125;</span><br><span class="line">        else&#123;</span><br><span class="line">            $msg = &apos;上传失败！&apos;;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    else&#123;</span><br><span class="line">        $msg = &quot;只允许上传.jpg|.png|.gif类型文件！&quot;;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>00截断</li>
+</ul>
+<hr>
+<h2 id="图片马"><a href="#图片马" class="headerlink" title="图片马"></a>图片马</h2><ul>
+<li>后缀名、content-type，以及利用imagecreatefromgif</li>
+<li>直接包含会自动解析文php文件</li>
+</ul>
+
+      
+      
+        <div class="page-reward">
+          <p><a href="javascript:void(0)" onclick="dashangToggle()" class="dashang">赏</a></p>
+          <div class="hide_box"></div>
+          <div class="shang_box">
+            <a class="shang_close" href="javascript:void(0)" onclick="dashangToggle()">×</a>
+            <div class="shang_tit">
+              <p>纯属好玩</p>
+            </div>
+            <div class="shang_payimg">
+              <img src="/img/alipayimg.jpg" alt="扫码支持" title="扫一扫" />
+            </div>
+              <div class="pay_explain">扫码打赏，你说多少就多少</div>
+            <div class="shang_payselect">
+              
+                <div class="pay_item checked" data-id="alipay">
+                  <span class="radiobox"></span>
+                  <span class="pay_logo"><img src="/img/alipay.png" alt="支付宝" /></span>
+                </div>
+              
+              
+                <div class="pay_item" data-id="wechat">
+                  <span class="radiobox"></span>
+                  <span class="pay_logo"><img src="/img/weixin.png" alt="微信" /></span>
+                </div>
+              
+            </div>
+            <div class="shang_info">
+              <p>打开<span id="shang_pay_txt">支付宝</span>扫一扫，即可进行扫码打赏哦</p>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
+        <script type="text/javascript">
+          $(".pay_item").click(function(){
+            $(this).addClass('checked').siblings('.pay_item').removeClass('checked');
+            var dataid=$(this).attr('data-id');
+            $(".shang_payimg img").attr("src","/img/"+dataid+"img.jpg");
+            $("#shang_pay_txt").text(dataid=="alipay"?"支付宝":"微信");
+          });
+          function dashangToggle(){
+            
+            $(".hide_box").fadeToggle();
+            $(".shang_box").fadeToggle();
+          }
+        </script>
+      
+    </div>
+    
+  </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2018/08/09/test/file_upload/">file_upload</a></p>
+        <p><span>文章作者:</span><a href="/" title="访问 token 的个人博客">token</a></p>
+        <p><span>发布时间:</span>2018年08月09日 - 00时10分</p>
+        <p><span>最后更新:</span>2019年07月22日 - 10时22分</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2018/08/09/test/file_upload/" title="file_upload">http://115.159.143.110/2018/08/09/test/file_upload/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://115.159.143.110/2018/08/09/test/file_upload/　　作者: token" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script src="/js/clipboard.min.js"></script>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+<nav id="article-nav">
+  
+    <a href="/2018/08/09/test/phpmyadmin_test/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          phpmyadmin_test
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/08/09/test/XSSR/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">XSSR</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#file-upload"><span class="toc-number">1.</span> <span class="toc-text">file_upload</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#JS"><span class="toc-number">1.1.</span> <span class="toc-text">JS</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#MIME类型检测"><span class="toc-number">1.2.</span> <span class="toc-text">MIME类型检测</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#文件后缀名检测QQQQQQQQQQQQQQQ"><span class="toc-number">1.3.</span> <span class="toc-text">文件后缀名检测QQQQQQQQQQQQQQQ</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#黑名单"><span class="toc-number">1.3.1.</span> <span class="toc-text">黑名单</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#白名单"><span class="toc-number">1.3.2.</span> <span class="toc-text">白名单</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#htaccess可上传"><span class="toc-number">1.4.</span> <span class="toc-text">.htaccess可上传</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#phP大小写未过滤"><span class="toc-number">1.5.</span> <span class="toc-text">phP大小写未过滤</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#未对php-过滤"><span class="toc-number">1.6.</span> <span class="toc-text">未对php 过滤</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#windows特性"><span class="toc-number">1.7.</span> <span class="toc-text">windows特性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#代码审计"><span class="toc-number">1.8.</span> <span class="toc-text">代码审计</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#双写绕过"><span class="toc-number">1.9.</span> <span class="toc-text">双写绕过</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#00截断-原理pass-11"><span class="toc-number">1.10.</span> <span class="toc-text">00截断  原理pass-11</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#图片马"><span class="toc-number">1.11.</span> <span class="toc-text">图片马</span></a></li></ol></li></ol>
+</div>
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+        }
+    })
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+    }
+</script>
+
+
+
+
+
+<div class="bdsharebuttonbox">
+	<a href="#" class="fx fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+	<a href="#" class="fx fa-weixin bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+	<a href="#" class="fx fa-qq bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+	<a href="#" class="fx fa-facebook-official bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+	<a href="#" class="fx fa-twitter bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+	<a href="#" class="fx fa-linkedin bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+	<a href="#" class="fx fa-files-o bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+</div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+
+
+
+    
+        <div id="gitments"></div>
+<script src="/js/gitment.browser.js"></script>
+<script>
+    var gitment = new Gitment({
+      id: window.location.pathname,
+      owner: 'luuman',
+      repo: 'luuman.github.io',
+      oauth: {
+        client_id: '',
+        client_secret: '',
+      },
+    })
+    gitment.render('gitments')
+</script>
+    
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2018/08/09/test/phpmyadmin_test/" title="上一篇: phpmyadmin_test">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        
+            <a href="/2018/08/09/test/XSSR/" title="下一篇: XSSR">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/07/20/npm安装卸载模块/">npm安装卸载模块</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/07/17/七月小记/">七月小记</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/07/09/单元测试/">前端单元测试学习</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/07/02/key_license/Axure_key/">Axure_key_license</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/06/20/MongoDB_learn/">MongoDB学习</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/05/07/hexo_Blog_Build/">hexo_Blog_Build</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/05/07/regular_expression/">正则表达式学习</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/03/11/read_note/如何有效阅读一本书_[日]奥野宣之_江西人民出版社_大众读物_190311/">如何有效阅读一本书 / [日]奥野宣之 / 江西人民出版社 / 大众读物_学习 / 190311</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/08/14/test/sqli_labs/">sqli_labs</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/08/14/test/blind_injection/">blind_injection</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/08/09/test/phpmyadmin_test/">phpmyadmin_test</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/08/09/test/file_upload/">file_upload</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/08/09/test/XSSR/">XSSR</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/08/08/test/shell_exec/">shell_exec</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/08/07/SS_Server_build/">SS_Server_build</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/08/02/test/密码重置的骚姿势/">密码重置的骚姿势</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/08/02/git_proxt_set/">git_proxt_set</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/08/02/test/Aircrack-ng/">Aircrack-ng</a></li></ul>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+    <script>
+        $(".post-list").addClass("toc-article");
+        $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+            }
+        })
+    </script>
+
+
+
+    <script>
+        
+    </script>
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                &copy; 2019-07-22 <a href="https://github.com/Conroy-X">token</ a>
+            </div>
+            <div class="footer-right">
+               <!-- <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/luuman/hexo-theme-spfk" target="_blank">spfk</a> by luuman -->
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" >到访数: 
+                            <span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>, </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit">本页阅读量: 
+                            <span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+
+    </div>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var backgroundnum = 24;
+            var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+            $("#mobile-nav").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+            $(".left-col").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+        })
+    </script>
+
+
+
+
+
+<div class="scroll" id="scroll">
+    <a href="#"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    $(document).ready(function() {
+        if ($("#comments").length < 1) {
+            $("#scroll > a:nth-child(2)").hide();
+        };
+    })
+</script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+  <script language="javascript">
+    $(function() {
+        $("a[title]").each(function() {
+            var a = $(this);
+            var title = a.attr('title');
+            if (title == undefined || title == "") return;
+            a.data('title', title).removeAttr('title').hover(
+
+            function() {
+                var offset = a.offset();
+                $("<div id=\"anchortitlecontainer\"></div>").appendTo($("body")).html(title).css({
+                    top: offset.top - a.outerHeight() - 15,
+                    left: offset.left + a.outerWidth()/2 + 1
+                }).fadeIn(function() {
+                    var pop = $(this);
+                    setTimeout(function() {
+                        pop.remove();
+                    }, pop.text().length * 800);
+                });
+            }, function() {
+                $("#anchortitlecontainer").remove();
+            });
+        });
+    });
+</script>
+
+
+  </div>
+</body>
+</html>
